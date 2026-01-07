@@ -3,7 +3,16 @@ export default function About() {
   const strengths = ["Analytical Thinking", "Problem Solving", "Documentation & Organization", "Detail-Oriented", "Adaptability", "Team Collaboration", "User-Centered Thinking", "Research-Oriented Mindset"];
 
   return (
-    <div className="fade-in about-wrapper">
+    <div 
+      className="fade-in about-wrapper"
+      style={{
+        backgroundImage: 'url("/Background/About.jpg")', // Put your background here
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        padding: '40px 20px'
+      }}
+    >
       <h2 className="main-name" style={{fontSize: '2.5rem'}}>About Me</h2>
       
       <p className="hero-description" style={{maxWidth: '100%'}}>
@@ -81,6 +90,22 @@ export default function About() {
         <p className="hero-description" style={{fontSize: '0.9rem', margin: '0'}}>
           I aim to leverage my forensic knowledge to protect organizations from emerging threats and lead a Digital Forensics team.
         </p>
+      </div>
+
+      {/* Profile Image (Optional) */}
+      <div style={{ marginTop: '30px', textAlign: 'center' }}>
+        <img 
+          src="/Photos/Me.jpg" // Use public folder
+          alt="Nathan Arcaya"
+          style={{
+            width: '200px',
+            height: '200px',
+            borderRadius: '50%',
+            border: '2px solid white',
+            objectFit: 'cover',
+            boxShadow: '0 5px 20px rgba(0,0,0,0.6)'
+          }}
+        />
       </div>
     </div>
   );

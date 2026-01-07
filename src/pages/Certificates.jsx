@@ -1,4 +1,17 @@
 export default function Certificates() {
+
+  <div 
+    className="fade-in cert-layout" 
+    style={{ 
+      backgroundImage: "url('/Background/Certificates.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
+>
+  {/* Certificates content */}
+</div>
+
   const certs = [
     {
       title: "Programming Foundations: Databases",
