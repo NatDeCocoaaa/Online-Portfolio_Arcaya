@@ -17,25 +17,6 @@
   overflow: hidden; /* Keeps the background static while card scrolls */
 }
 
-/* --- Dynamic Backgrounds --- */
-/* Ensure Home.jpg, About.jpg, etc., are all inside the 'public' folder */
-
-.home-bg { 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./Background/Home.jpg'); 
-}
-.about-bg { 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./Background/About.jpg'); 
-}
-.projects-bg { 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./Background/Projects.jpg'); 
-}
-.certificates-bg { 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./Background/Certificates.jpg'); 
-}
-.contacts-bg { 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./Background/Contacts.jpg'); 
-}
-
 /* --- Navbar --- */
 .navbar {
   display: flex;
