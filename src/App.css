@@ -79,7 +79,7 @@
   text-shadow: 0 0 8px rgba(165, 243, 252, 0.5);
 }
 
-/* --- The Glass Card (SCROLLABLE CONTAINER) --- */
+/* --- The Glass Card (The Scrollable Card) --- */
 .main-content {
   flex: 1;
   display: flex;
@@ -120,7 +120,7 @@
   border-radius: 10px;
 }
 
-/* --- Home Component Specific Fixes --- */
+/* --- Home Component --- */
 .home-layout {
   display: flex;
   flex-direction: column;
@@ -129,12 +129,12 @@
 }
 
 .profile-container {
-  width: 200px;           /* Set your desired size */
+  width: 200px;           /* Sets to your desired size */
   height: 200px;
-  border-radius: 50%;     /* Circular frame */
-  overflow: hidden;       /* Crops the image to the circle */
+  border-radius: 50%;     /* The Circular frame */
+  overflow: hidden;       /* Crops the image to the circle (Very necessary */
   margin-bottom: 1.5rem;
-  border: 4px solid rgba(165, 243, 252, 0.2); /* Subtle glow border */
+  border: 4px solid rgba(165, 243, 252, 0.2); /* Subtles glow border :D */
   flex-shrink: 0;         /* Prevents the card from squishing the image */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
@@ -142,7 +142,7 @@
 .profile-pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* Prevents distortion */
+  object-fit: cover;      /* Prevents any distortion */
   display: block;
 }
 
@@ -161,13 +161,13 @@
   line-height: 1.6;
 }
 
-/* Ensure badges center correctly in the Home view */
+/* Ensures the badges are centered correctly in the Home */
 .home-layout .badge-group {
   justify-content: center;
   margin-bottom: 0.5rem;
 }
 
-/* --- About Page & Education Fixes --- */
+/* --- About Page --- */
 .about-details-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -207,7 +207,7 @@
 }
 
 .school-header {
-  display: block; /* Forces title to stay on a new line */
+  display: block; /* Forces the title to stay on a new line */
   margin-top: 6px; 
 }
 
@@ -255,7 +255,7 @@
 
 .cert-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Single column for better readability */
+  grid-template-columns: 1fr; /* A Single column for better readability for users*/
   gap: 15px;
 }
 
@@ -275,7 +275,7 @@
 .cert-card:hover {
   background: rgba(165, 243, 252, 0.1);
   border-color: #a5f3fc;
-  transform: translateX(10px); /* Slight slide effect */
+  transform: translateX(10px); /* Slight sliding effect */
 }
 
 .cert-date {
@@ -310,13 +310,13 @@
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Increased gap slightly for images */
+  gap: 1.5rem; /* Increased the gap slightly for images */
 }
 
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 14px;
-  overflow: hidden; /* Ensures image corners match card radius */
+  overflow: hidden; /* Ensures that the image corners matches the card radius */
   backdrop-filter: blur(10px);
   transition: transform 0.2s ease, background 0.2s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -330,7 +330,7 @@
 /*Project Screenshot Styling */
 .project-image-container {
   width: 100%;
-  height: 160px; /* Adjust height as needed */
+  height: 160px; /* Adjusts the height as needed */
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
 }
@@ -338,7 +338,7 @@
 .project-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops image to fill container */
+  object-fit: cover; /* Crops any image to fill container */
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
@@ -371,7 +371,7 @@
   letter-spacing: 0.5px;
 }
 
-/* Status Colors - Distinct logic */
+/* Status Colors - The Distinct logic */
 .status.finished {
   background: rgba(72, 187, 120, 0.2);
   color: #48bb78;
@@ -396,7 +396,7 @@
 
 .project-meta {
   display: flex;
-  flex-direction: column; /* Stacked for better readability with images */
+  flex-direction: column; /* Stacked for better readability with images hehe */
   gap: 0.4rem;
   font-size: 0.8rem;
   opacity: 0.6;
@@ -416,7 +416,7 @@
   text-decoration: underline;
 }
 
-/* --- Footer (Inside the scroll area) --- */
+/* --- Footer (Inside the scrolling areas) --- */
 .footer-glass {
   margin-top: 60px;
   padding: 25px 0;
@@ -444,7 +444,7 @@
   text-shadow: 0 0 8px rgba(165, 243, 252, 0.8);
 }
 
-/* --- Animations --- */
+/* --- Animations for Website :O --- */
 .fade-in { animation: fadeIn 0.8s ease-out forwards; }
 
 @keyframes fadeIn { 
@@ -452,7 +452,7 @@
   to { opacity: 1; transform: translateY(0); } 
 }
 
-/* --- Responsive Layout --- */
+/* --- Theee Responsive Layout --- */
 @media (max-width: 768px) {
   .about-details-grid { grid-template-columns: 1fr; }
   .navbar { padding: 1rem 5%; }

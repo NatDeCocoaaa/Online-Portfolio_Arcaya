@@ -1,3 +1,18 @@
+/**
+ * PROJECTS COMPONENT
+ * Displays a collection of projects with status labels (Finished, Ongoing, Planned).
+ */
+
+import PortfolioImg from "../assets/Project_SS/Portfolio_Website_Project.jpg"; 
+import CLEANIImg from "../assets/Project_SS/UX_Design_Project.jpg";
+import DijkstraImg from "../assets/Project_SS/Transportation_Dijkstras_Algorithm_Project.jpg";
+import TRJDBImg from '../assets/Project_SS/Proposed_Database_Design_Project.jpg';
+import AidImg from '../assets/Project_SS/Python_&_OOP_Aid_Distribution_System_Project.jpg';
+import DDoSImg from '../assets/Project_SS/Exposing_Vulnerabilities_DDoS_on_IoT_Devices_Project.jpg';
+import LifeOSImg from '../assets/Project_SS/Life_OS_Project.jpg';
+import SecondBrainImg from '../assets/Project_SS/Second_Brain_Project.jpg';
+import NoteAppImg from '../assets/Project_SS/Note-Taking_Application_Cover_Project.jpg';
+
 export default function Projects() {
   const projects = [
     {
@@ -7,7 +22,7 @@ export default function Projects() {
       date: "January 2026",
       people: ["Nathan Arcaya"],
       link: "",
-      imgSrc: "/Project_SS/Portfolio_Website_Project.jpg"
+      imgSrc: PortfolioImg
     },
     {
       title: "CLEANI UI/UX Design",
@@ -16,7 +31,7 @@ export default function Projects() {
       date: "October 2025",
       people: ["Nathan Arcaya", "Ashley May Barisoro", "Gwyneth Cataylo", "Ariana May Saromo"],
       link: "",
-      imgSrc: "/Project_SS/CLEANI_UI_UX_Design_Project.jpg"
+      imgSrc: CLEANIImg
     },
     {
       title: "Enhancing Transportation and Delivery Efficiency through Dijkstra's Algorithm",
@@ -25,7 +40,7 @@ export default function Projects() {
       date: "October 2025",
       people: ["Nathan Arcaya", "Charrise Keira Tarog", "Japhet Melquisdec Gonzales"],
       link: "",
-      imgSrc: "/Project_SS/Transportation_Dijkstra_Project.jpg"
+      imgSrc: DijkstraImg
     },
     {
       title: "Proposed Database Design for TRJ CCTV",
@@ -34,7 +49,7 @@ export default function Projects() {
       date: "October 2025",
       people: ["Nathan Arcaya", "Francis Emmanuel Anciro", "Emmanuel Jamir Paje", "Ethan Edgar Francisco"],
       link: "",
-      imgSrc: "/Project_SS/Proposed_Database_Design_Project.jpg"
+      imgSrc: TRJDBImg
     },
     {
       title: "Python & OOP Aid Distribution System",
@@ -43,7 +58,7 @@ export default function Projects() {
       date: "June 2025",
       people: ["Nathan Arcaya"],
       link: "",
-      imgSrc: "/Project_SS/Python_OOP_Aid_Distribution_System_Project.jpg"
+      imgSrc: AidImg
     },
     {
       title: "Exposing Vulnerabilities: DDoS on IoT Devices",
@@ -52,7 +67,7 @@ export default function Projects() {
       date: "November 2024",
       people: ["Nathan Arcaya", "Prince Jabez Reyes", "Rafael Kenneth Mercado"],
       link: "",
-      imgSrc: "/Project_SS/DDoS_IoT_Project.jpg"
+      imgSrc: DDoSImg
     },
     {
       title: "Life OS",
@@ -61,7 +76,7 @@ export default function Projects() {
       date: null,
       people: ["Nathan Arcaya"],
       link: "",
-      imgSrc: "/Project_SS/Life_OS_Project.jpg"
+      imgSrc: LifeOSImg
     },
     {
       title: "Second Brain",
@@ -70,7 +85,7 @@ export default function Projects() {
       date: null,
       people: ["Nathan Arcaya"],
       link: "",
-      imgSrc: "/Project_SS/Second_Brain_Project.jpg"
+      imgSrc: SecondBrainImg
     },
     {
       title: "Local-based Note-Taking App with AI",
@@ -79,29 +94,17 @@ export default function Projects() {
       date: null,
       people: ["Nathan Arcaya"],
       link: "",
-      imgSrc: "/Project_SS/Note_Taking_App_Project.jpg"
+      imgSrc: NoteAppImg
     }
   ];
 
   return (
-    <div
-      className="fade-in projects-page"
-      style={{
-        backgroundImage: "url('/Background/Projects.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-        padding: "60px 20px"
-      }}
-    >
+    <div className="fade-in projects-page">
       <h2>My Projects</h2>
 
       <div className="projects-list">
         {projects.map((proj, index) => (
           <div key={index} className="project-card">
-            
-            {/* Image Preview */}
             <div className="project-image-container">
               <img
                 src={proj.imgSrc || "https://via.placeholder.com/400x200?text=Preview+Coming+Soon"}

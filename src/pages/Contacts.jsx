@@ -1,16 +1,14 @@
+/**
+ * CONTACT PAGE
+ * Provides social links and a professional resume view link.
+ * Features even a thematic GIF to maintain personal brand aesthetic. (Minecraft!)
+ */
+
+import MinecraftGif from '../assets/GIFS/Minecraft_GIF_Loop.gif';
+
 export default function Contact() {
   return (
-    <div
-      className="fade-in contact-section"
-      style={{
-        backgroundImage: "url('/Background/Contacts.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-        padding: "80px 20px"
-      }}
-    >
+    <div className="fade-in contact-section">
       <div
         style={{
           display: "flex",
@@ -19,7 +17,8 @@ export default function Contact() {
           gap: "60px",
           flexWrap: "wrap",
           maxWidth: "1000px",
-          margin: "0 auto"
+          margin: "0 auto",
+          padding: "40px 0"
         }}
       >
         {/* LEFT COLUMN */}
@@ -99,7 +98,7 @@ export default function Contact() {
           }}
         >
           <img
-            src="/GIFS/Minecraft_GIF_Loop.gif"
+            src={MinecraftGif}
             alt="Minecraft Scenery GIF"
             style={{
               width: "100%",

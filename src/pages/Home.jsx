@@ -1,9 +1,17 @@
+/**
+ * HOME PAGE
+ * The primary landing view. Highlights the identity, specialization, 
+ * and a brief personal philosophy.
+ */
+
+import MePic from '../assets/Photos/Me.jpg'; // <-- import the image from public/
+
 export default function Home() {
   return (
     <div className="fade-in home-layout">
       {/* Profile Image Section */}
       <div className="profile-container">
-        <img src="./Photos/Me.jpg" alt="Nathan Arcaya" className="profile-pic" />
+        <img src={MePic} alt="Nathan Arcaya" className="profile-pic" />
       </div>
       
       {/* Identity Section */}
